@@ -1,0 +1,324 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=C:/Users/choltz/Desktop/Senor-Hop/ --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ --file-set=SIM_VHDL --report-file=sopcinfo:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.sopcinfo --report-file=html:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.html --report-file=sip:C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/lcd_display.sip --report-file=csv:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.csv --report-file=spd:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.spd --report-file=cmp:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.qsys
+Progress: Loading Senor-Hop/lcd_display.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding Char_LCD_16x2 [altera_up_avalon_character_lcd 13.0]
+Progress: Parameterizing module Char_LCD_16x2
+Progress: Adding SRAM [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module SRAM
+Progress: Adding clk_27 [clock_source 13.0]
+Progress: Parameterizing module clk_27
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding merged_resets [altera_reset_bridge 13.0]
+Progress: Parameterizing module merged_resets
+Progress: Adding sys_clk [altera_clock_bridge 13.0]
+Progress: Parameterizing module sys_clk
+Progress: Adding External_Clocks [altera_up_clocks 13.0]
+Progress: Parameterizing module External_Clocks
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lcd_display.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lcd_display.sysid: Time stamp will be automatically updated when this component is generated.
+Info: lcd_display: Generating lcd_display "lcd_display" for SIM_VHDL
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 42 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 19 modules, 82 connections
+Info: merlin_domain_transform: After transform: 35 modules, 209 connections
+Info: merlin_router_transform: After transform: 43 modules, 249 connections
+Info: merlin_traffic_limiter_transform: After transform: 44 modules, 255 connections
+Info: merlin_burst_transform: After transform: 46 modules, 265 connections
+Info: reset_adaptation_transform: After transform: 48 modules, 175 connections
+Info: merlin_network_to_switch_transform: After transform: 63 modules, 207 connections
+Info: merlin_width_transform: After transform: 67 modules, 219 connections
+Info: limiter_update_transform: After transform: 67 modules, 220 connections
+Info: merlin_mm_transform: After transform: 67 modules, 220 connections
+Info: merlin_interrupt_mapper_transform: After transform: 68 modules, 223 connections
+Info: JTAG_UART: Starting RTL generation for module 'lcd_display_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lcd_display_JTAG_UART --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0006_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0006_JTAG_UART_gen//lcd_display_JTAG_UART_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0006_JTAG_UART_gen/  ]
+Info: JTAG_UART: Done RTL generation for module 'lcd_display_JTAG_UART'
+Info: JTAG_UART: "lcd_display" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: SDRAM: Starting RTL generation for module 'lcd_display_SDRAM'
+Info: SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=lcd_display_SDRAM --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0007_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0007_SDRAM_gen//lcd_display_SDRAM_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0007_SDRAM_gen/  ]
+Info: SDRAM: Done RTL generation for module 'lcd_display_SDRAM'
+Info: SDRAM: "lcd_display" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: Char_LCD_16x2: Starting Generation of Character LCD
+Info: Char_LCD_16x2: "lcd_display" instantiated altera_up_avalon_character_lcd "Char_LCD_16x2"
+Info: SRAM: Starting Generation of SRAM or SSRAM Controller
+Info: SRAM: "lcd_display" instantiated altera_up_avalon_sram "SRAM"
+Info: CPU: Starting RTL generation for module 'lcd_display_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lcd_display_CPU --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0010_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0010_CPU_gen//lcd_display_CPU_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0010_CPU_gen/    --bogus  ]
+Info: CPU: # 2015.04.22 17:16:05 (*) Starting Nios II generation
+Info: CPU: # 2015.04.22 17:16:05 (*)   Checking for plaintext license.
+Info: CPU: # 2015.04.22 17:16:05 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2015.04.22 17:16:05 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2015.04.22 17:16:05 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2015.04.22 17:16:05 (*)   Plaintext license not found.
+Info: CPU: # 2015.04.22 17:16:05 (*)   Checking for encrypted license (non-evaluation).
+Info: CPU: # 2015.04.22 17:16:05 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2015.04.22 17:16:05 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2015.04.22 17:16:05 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2015.04.22 17:16:05 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: CPU: # 2015.04.22 17:16:05 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2015.04.22 17:16:05 (*)   Creating all objects for CPU
+Info: CPU: # 2015.04.22 17:16:05 (*)     Testbench
+Info: CPU: # 2015.04.22 17:16:06 (*)     Instruction decoding
+Info: CPU: # 2015.04.22 17:16:06 (*)       Instruction fields
+Info: CPU: # 2015.04.22 17:16:06 (*)       Instruction decodes
+Info: CPU: # 2015.04.22 17:16:06 (*)       Signals for RTL simulation waveforms
+Info: CPU: # 2015.04.22 17:16:06 (*)       Instruction controls
+Info: CPU: # 2015.04.22 17:16:06 (*)     Pipeline frontend
+Info: CPU: # 2015.04.22 17:16:06 (*)     Pipeline backend
+Info: CPU: # 2015.04.22 17:16:09 (*)   Creating 'C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0010_CPU_gen//lcd_display_CPU_nios2_waves.do'
+Info: CPU: # 2015.04.22 17:16:09 (*)   Generating RTL from CPU objects
+Info: CPU: # 2015.04.22 17:16:14 (*)   Creating encrypted RTL
+Info: CPU: # 2015.04.22 17:16:17 (*)   Creating IP functional simulation model
+Info: CPU: # 2015.04.22 17:16:26 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'lcd_display_CPU'
+Info: CPU: "lcd_display" instantiated altera_nios2_qsys "CPU"
+Info: sysid: Generating VHDL simulation model
+Info: sysid: Generated simulation model lcd_display_sysid.vho
+Info: sysid: "lcd_display" instantiated altera_avalon_sysid_qsys "sysid"
+Info: External_Clocks: Starting Generation of Required Clocks for DE-Series Boards
+Info: External_Clocks: "lcd_display" instantiated altera_up_clocks "External_Clocks"
+Info: CPU_instruction_master_translator: "lcd_display" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "lcd_display" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "lcd_display" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "lcd_display" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model lcd_display_CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model lcd_display_SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: Char_LCD_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: Char_LCD_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model lcd_display_Char_LCD_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: Char_LCD_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "Char_LCD_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model lcd_display_SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo: Generating VHDL simulation model
+Info: SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo: Generated simulation model lcd_display_SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo.vho
+Info: SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo"
+Info: addr_router: "lcd_display" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "lcd_display" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "lcd_display" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "lcd_display" instantiated altera_merlin_router "id_router_002"
+Info: id_router_004: "lcd_display" instantiated altera_merlin_router "id_router_004"
+Info: id_router_005: "lcd_display" instantiated altera_merlin_router "id_router_005"
+Info: limiter: "lcd_display" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "lcd_display" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "lcd_display" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: Generating VHDL simulation model
+Info: cmd_xbar_demux: Generated simulation model lcd_display_cmd_xbar_demux.vho
+Info: cmd_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: Generating VHDL simulation model
+Info: cmd_xbar_demux_001: Generated simulation model lcd_display_cmd_xbar_demux_001.vho
+Info: cmd_xbar_demux_001: "lcd_display" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: Generating VHDL simulation model
+Info: cmd_xbar_mux: Generated simulation model lcd_display_cmd_xbar_mux.vho
+Info: cmd_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: Generating VHDL simulation model
+Info: rsp_xbar_demux: Generated simulation model lcd_display_rsp_xbar_demux.vho
+Info: rsp_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: Generating VHDL simulation model
+Info: rsp_xbar_demux_002: Generated simulation model lcd_display_rsp_xbar_demux_002.vho
+Info: rsp_xbar_demux_002: "lcd_display" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: Generating VHDL simulation model
+Info: rsp_xbar_mux: Generated simulation model lcd_display_rsp_xbar_mux.vho
+Info: rsp_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: rsp_xbar_mux_001: Generating VHDL simulation model
+Info: rsp_xbar_mux_001: Generated simulation model lcd_display_rsp_xbar_mux_001.vho
+Info: rsp_xbar_mux_001: "lcd_display" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: width_adapter: "lcd_display" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/mentor/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/mentor/altera_merlin_burst_uncompressor.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/aldec/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/aldec/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: Generating VHDL simulation model
+Info: irq_mapper: Generated simulation model lcd_display_irq_mapper.vho
+Info: irq_mapper: "lcd_display" instantiated altera_irq_mapper "irq_mapper"
+Info: lcd_display: Done lcd_display" with 35 modules, 231 files, 10787545 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.spd --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/
+Info: Doing: ip-make-simscript --spd=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.spd --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	26 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERAPRO simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/choltz/Desktop/Senor-Hop/ --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/ --report-file=bsf:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.qsys
+Progress: Loading Senor-Hop/lcd_display.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding Char_LCD_16x2 [altera_up_avalon_character_lcd 13.0]
+Progress: Parameterizing module Char_LCD_16x2
+Progress: Adding SRAM [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module SRAM
+Progress: Adding clk_27 [clock_source 13.0]
+Progress: Parameterizing module clk_27
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding merged_resets [altera_reset_bridge 13.0]
+Progress: Parameterizing module merged_resets
+Progress: Adding sys_clk [altera_clock_bridge 13.0]
+Progress: Parameterizing module sys_clk
+Progress: Adding External_Clocks [altera_up_clocks 13.0]
+Progress: Parameterizing module External_Clocks
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lcd_display.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lcd_display.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/choltz/Desktop/Senor-Hop/ --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.sopcinfo --report-file=html:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.html --report-file=qip:C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/lcd_display.qip --report-file=cmp:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.qsys --language=VHDL
+Progress: Loading Senor-Hop/lcd_display.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding Char_LCD_16x2 [altera_up_avalon_character_lcd 13.0]
+Progress: Parameterizing module Char_LCD_16x2
+Progress: Adding SRAM [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module SRAM
+Progress: Adding clk_27 [clock_source 13.0]
+Progress: Parameterizing module clk_27
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding merged_resets [altera_reset_bridge 13.0]
+Progress: Parameterizing module merged_resets
+Progress: Adding sys_clk [altera_clock_bridge 13.0]
+Progress: Parameterizing module sys_clk
+Progress: Adding External_Clocks [altera_up_clocks 13.0]
+Progress: Parameterizing module External_Clocks
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lcd_display.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lcd_display.sysid: Time stamp will be automatically updated when this component is generated.
+Info: lcd_display: Generating lcd_display "lcd_display" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 42 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 19 modules, 82 connections
+Info: merlin_domain_transform: After transform: 35 modules, 209 connections
+Info: merlin_router_transform: After transform: 43 modules, 249 connections
+Info: merlin_traffic_limiter_transform: After transform: 44 modules, 255 connections
+Info: merlin_burst_transform: After transform: 46 modules, 265 connections
+Info: reset_adaptation_transform: After transform: 48 modules, 175 connections
+Info: merlin_network_to_switch_transform: After transform: 63 modules, 207 connections
+Info: merlin_width_transform: After transform: 67 modules, 219 connections
+Info: limiter_update_transform: After transform: 67 modules, 220 connections
+Info: merlin_mm_transform: After transform: 67 modules, 220 connections
+Info: merlin_interrupt_mapper_transform: After transform: 68 modules, 223 connections
+Info: JTAG_UART: Starting RTL generation for module 'lcd_display_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lcd_display_JTAG_UART --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0081_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0081_JTAG_UART_gen//lcd_display_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'lcd_display_JTAG_UART'
+Info: JTAG_UART: "lcd_display" instantiated altera_avalon_jtag_uart "JTAG_UART"
+Info: SDRAM: Starting RTL generation for module 'lcd_display_SDRAM'
+Info: SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=lcd_display_SDRAM --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0082_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0082_SDRAM_gen//lcd_display_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM: Done RTL generation for module 'lcd_display_SDRAM'
+Info: SDRAM: "lcd_display" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: Char_LCD_16x2: Starting Generation of Character LCD
+Info: Char_LCD_16x2: "lcd_display" instantiated altera_up_avalon_character_lcd "Char_LCD_16x2"
+Info: SRAM: Starting Generation of SRAM or SSRAM Controller
+Info: SRAM: "lcd_display" instantiated altera_up_avalon_sram "SRAM"
+Info: CPU: Starting RTL generation for module 'lcd_display_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lcd_display_CPU --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0085_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/choltz/AppData/Local/Temp/alt6547_1079482969102809013.dir/0085_CPU_gen//lcd_display_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU: # 2015.04.22 17:16:57 (*) Starting Nios II generation
+Info: CPU: # 2015.04.22 17:16:57 (*)   Checking for plaintext license.
+Info: CPU: # 2015.04.22 17:16:57 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2015.04.22 17:16:57 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2015.04.22 17:16:57 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2015.04.22 17:16:57 (*)   Plaintext license not found.
+Info: CPU: # 2015.04.22 17:16:57 (*)   Checking for encrypted license (non-evaluation).
+Info: CPU: # 2015.04.22 17:16:57 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: CPU: # 2015.04.22 17:16:57 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: CPU: # 2015.04.22 17:16:57 (*)   LM_LICENSE_FILE environment variable is empty
+Info: CPU: # 2015.04.22 17:16:57 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: CPU: # 2015.04.22 17:16:57 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2015.04.22 17:16:57 (*)   Creating all objects for CPU
+Info: CPU: # 2015.04.22 17:16:57 (*)     Testbench
+Info: CPU: # 2015.04.22 17:16:58 (*)     Instruction decoding
+Info: CPU: # 2015.04.22 17:16:58 (*)       Instruction fields
+Info: CPU: # 2015.04.22 17:16:58 (*)       Instruction decodes
+Info: CPU: # 2015.04.22 17:16:58 (*)       Signals for RTL simulation waveforms
+Info: CPU: # 2015.04.22 17:16:58 (*)       Instruction controls
+Info: CPU: # 2015.04.22 17:16:58 (*)     Pipeline frontend
+Info: CPU: # 2015.04.22 17:16:58 (*)     Pipeline backend
+Info: CPU: # 2015.04.22 17:17:01 (*)   Generating RTL from CPU objects
+Info: CPU: # 2015.04.22 17:17:04 (*)   Creating encrypted RTL
+Info: CPU: # 2015.04.22 17:17:05 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'lcd_display_CPU'
+Info: CPU: "lcd_display" instantiated altera_nios2_qsys "CPU"
+Info: sysid: "lcd_display" instantiated altera_avalon_sysid_qsys "sysid"
+Info: External_Clocks: Starting Generation of Required Clocks for DE-Series Boards
+Info: External_Clocks: "lcd_display" instantiated altera_up_clocks "External_Clocks"
+Info: CPU_instruction_master_translator: "lcd_display" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "lcd_display" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "lcd_display" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "lcd_display" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "lcd_display" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "lcd_display" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "lcd_display" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "lcd_display" instantiated altera_merlin_router "id_router_002"
+Info: id_router_004: "lcd_display" instantiated altera_merlin_router "id_router_004"
+Info: id_router_005: "lcd_display" instantiated altera_merlin_router "id_router_005"
+Info: limiter: "lcd_display" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "lcd_display" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "lcd_display" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "lcd_display" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "lcd_display" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "lcd_display" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "lcd_display" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "lcd_display" instantiated altera_irq_mapper "irq_mapper"
+Info: lcd_display: Done lcd_display" with 31 modules, 159 files, 3484433 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

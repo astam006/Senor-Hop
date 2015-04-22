@@ -1,0 +1,293 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=C:/Users/choltz/Desktop/Senor-Hop/ --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ --file-set=SIM_VHDL --report-file=sopcinfo:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.sopcinfo --report-file=html:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.html --report-file=sip:C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/lcd_display.sip --report-file=csv:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.csv --report-file=spd:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.spd --report-file=cmp:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.qsys
+Progress: Loading Senor-Hop/lcd_display.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding character_lcd_0 [altera_up_avalon_character_lcd 13.0]
+Progress: Parameterizing module character_lcd_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lcd_display: Generating lcd_display "lcd_display" for SIM_VHDL
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 17 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 11 modules, 35 connections
+Info: merlin_domain_transform: After transform: 22 modules, 89 connections
+Info: merlin_router_transform: After transform: 28 modules, 107 connections
+Info: merlin_burst_transform: After transform: 29 modules, 110 connections
+Info: reset_adaptation_transform: After transform: 30 modules, 112 connections
+Info: merlin_network_to_switch_transform: After transform: 41 modules, 140 connections
+Info: merlin_width_transform: After transform: 43 modules, 146 connections
+Info: merlin_mm_transform: After transform: 43 modules, 146 connections
+Info: merlin_interrupt_mapper_transform: After transform: 44 modules, 149 connections
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys_0: Starting RTL generation for module 'lcd_display_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lcd_display_nios2_qsys_0 --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0001_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0001_nios2_qsys_0_gen//lcd_display_nios2_qsys_0_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0001_nios2_qsys_0_gen/    --bogus  ]
+Info: nios2_qsys_0: # 2015.04.22 12:19:44 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2015.04.22 12:19:44 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2015.04.22 12:19:45 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2015.04.22 12:19:47 (*)   Creating 'C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0001_nios2_qsys_0_gen//lcd_display_nios2_qsys_0_nios2_waves.do'
+Info: nios2_qsys_0: # 2015.04.22 12:19:47 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2015.04.22 12:19:47 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2015.04.22 12:19:50 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'lcd_display_nios2_qsys_0'
+Info: nios2_qsys_0: "lcd_display" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'lcd_display_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lcd_display_onchip_memory2_0 --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0002_onchip_memory2_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0002_onchip_memory2_0_gen//lcd_display_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0002_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'lcd_display_onchip_memory2_0'
+Info: onchip_memory2_0: "lcd_display" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'lcd_display_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lcd_display_jtag_uart_0 --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0003_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --vhdl --config=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0003_jtag_uart_0_gen//lcd_display_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0003_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'lcd_display_jtag_uart_0'
+Info: jtag_uart_0: "lcd_display" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: character_lcd_0: Starting Generation of Character LCD
+Info: character_lcd_0: "lcd_display" instantiated altera_up_avalon_character_lcd "character_lcd_0"
+Info: nios2_qsys_0_instruction_master_translator: "lcd_display" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "lcd_display" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "lcd_display" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "lcd_display" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model lcd_display_nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: Generating VHDL simulation model
+Info: character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: Generated simulation model lcd_display_character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vho
+Info: character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "lcd_display" instantiated altera_merlin_router "addr_router"
+Info: id_router: "lcd_display" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "lcd_display" instantiated altera_merlin_router "id_router_001"
+Info: burst_adapter: "lcd_display" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "lcd_display" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: Generating VHDL simulation model
+Info: cmd_xbar_demux: Generated simulation model lcd_display_cmd_xbar_demux.vho
+Info: cmd_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: Generating VHDL simulation model
+Info: cmd_xbar_mux: Generated simulation model lcd_display_cmd_xbar_mux.vho
+Info: cmd_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: Generating VHDL simulation model
+Info: rsp_xbar_demux: Generated simulation model lcd_display_rsp_xbar_demux.vho
+Info: rsp_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: Generating VHDL simulation model
+Info: rsp_xbar_mux: Generated simulation model lcd_display_rsp_xbar_mux.vho
+Info: rsp_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: width_adapter: "lcd_display" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/mentor/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/mentor/altera_merlin_burst_uncompressor.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/aldec/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/submodules/aldec/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: Generating VHDL simulation model
+Info: irq_mapper: Generated simulation model lcd_display_irq_mapper.vho
+Info: irq_mapper: "lcd_display" instantiated altera_irq_mapper "irq_mapper"
+Info: lcd_display: Done lcd_display" with 22 modules, 137 files, 6192515 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.spd --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/
+Info: Doing: ip-make-simscript --spd=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.spd --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	14 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERAPRO simulator in C:/Users/choltz/Desktop/Senor-Hop/lcd_display/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/choltz/Desktop/Senor-Hop/ --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/ --report-file=bsf:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.qsys
+Progress: Loading Senor-Hop/lcd_display.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding character_lcd_0 [altera_up_avalon_character_lcd 13.0]
+Progress: Parameterizing module character_lcd_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/choltz/Desktop/Senor-Hop/ --output-directory=C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.sopcinfo --report-file=html:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.html --report-file=qip:C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/lcd_display.qip --report-file=cmp:C:/Users/choltz/Desktop/Senor-Hop/lcd_display.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/choltz/Desktop/Senor-Hop/lcd_display.qsys --language=VHDL
+Progress: Loading Senor-Hop/lcd_display.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding character_lcd_0 [altera_up_avalon_character_lcd 13.0]
+Progress: Parameterizing module character_lcd_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: lcd_display: Generating lcd_display "lcd_display" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 5 modules, 17 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 11 modules, 35 connections
+Info: merlin_domain_transform: After transform: 22 modules, 89 connections
+Info: merlin_router_transform: After transform: 28 modules, 107 connections
+Info: merlin_burst_transform: After transform: 29 modules, 110 connections
+Info: reset_adaptation_transform: After transform: 30 modules, 112 connections
+Info: merlin_network_to_switch_transform: After transform: 41 modules, 140 connections
+Info: merlin_width_transform: After transform: 43 modules, 146 connections
+Info: merlin_mm_transform: After transform: 43 modules, 146 connections
+Info: merlin_interrupt_mapper_transform: After transform: 44 modules, 149 connections
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: lcd_display: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys_0: Starting RTL generation for module 'lcd_display_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=lcd_display_nios2_qsys_0 --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0043_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0043_nios2_qsys_0_gen//lcd_display_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2015.04.22 12:20:10 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2015.04.22 12:20:10 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2015.04.22 12:20:11 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2015.04.22 12:20:12 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2015.04.22 12:20:12 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2015.04.22 12:20:15 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'lcd_display_nios2_qsys_0'
+Info: nios2_qsys_0: "lcd_display" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'lcd_display_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lcd_display_onchip_memory2_0 --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0044_onchip_memory2_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0044_onchip_memory2_0_gen//lcd_display_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'lcd_display_onchip_memory2_0'
+Info: onchip_memory2_0: "lcd_display" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'lcd_display_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lcd_display_jtag_uart_0 --dir=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0045_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/choltz/AppData/Local/Temp/alt6547_6464907896120797067.dir/0045_jtag_uart_0_gen//lcd_display_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'lcd_display_jtag_uart_0'
+Info: jtag_uart_0: "lcd_display" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: character_lcd_0: Starting Generation of Character LCD
+Info: character_lcd_0: "lcd_display" instantiated altera_up_avalon_character_lcd "character_lcd_0"
+Info: nios2_qsys_0_instruction_master_translator: "lcd_display" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "lcd_display" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "lcd_display" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "lcd_display" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "lcd_display" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "lcd_display" instantiated altera_merlin_router "addr_router"
+Info: id_router: "lcd_display" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "lcd_display" instantiated altera_merlin_router "id_router_001"
+Info: burst_adapter: "lcd_display" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "lcd_display" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "lcd_display" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "lcd_display" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "lcd_display" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/choltz/Desktop/Senor-Hop/lcd_display/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "lcd_display" instantiated altera_irq_mapper "irq_mapper"
+Info: lcd_display: Done lcd_display" with 21 modules, 100 files, 2929614 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

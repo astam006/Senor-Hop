@@ -1,0 +1,45 @@
+
+WORK > DEFAULT
+DEFAULT:                 ./libraries/work/                   
+work:                    ./libraries/work/                   
+Flash:                   ./libraries/Flash/                  
+External_Clocks:         ./libraries/External_Clocks/        
+sysid:                   ./libraries/sysid/                  
+CPU:                     ./libraries/CPU/                    
+Alpha_Blending:          ./libraries/Alpha_Blending/         
+CPU_fpoint:              ./libraries/CPU_fpoint/             
+VGA_Dual_Clock_FIFO:     ./libraries/VGA_Dual_Clock_FIFO/    
+VGA_Pixel_Scaler:        ./libraries/VGA_Pixel_Scaler/       
+VGA_Pixel_RGB_Resampler: ./libraries/VGA_Pixel_RGB_Resampler/
+VGA_Controller:          ./libraries/VGA_Controller/         
+VGA_Char_Buffer:         ./libraries/VGA_Char_Buffer/        
+VGA_Pixel_Buffer:        ./libraries/VGA_Pixel_Buffer/       
+SRAM:                    ./libraries/SRAM/                   
+PS2_Port:                ./libraries/PS2_Port/               
+Char_LCD_16x2:           ./libraries/Char_LCD_16x2/          
+Audio:                   ./libraries/Audio/                  
+AV_Config:               ./libraries/AV_Config/              
+Serial_Port:             ./libraries/Serial_Port/            
+Expansion_JP5:           ./libraries/Expansion_JP5/          
+Pushbuttons:             ./libraries/Pushbuttons/            
+Slider_Switches:         ./libraries/Slider_Switches/        
+HEX7_HEX4:               ./libraries/HEX7_HEX4/              
+HEX3_HEX0:               ./libraries/HEX3_HEX0/              
+Green_LEDs:              ./libraries/Green_LEDs/             
+Red_LEDs:                ./libraries/Red_LEDs/               
+SDRAM:                   ./libraries/SDRAM/                  
+Interval_Timer:          ./libraries/Interval_Timer/         
+JTAG_UART:               ./libraries/JTAG_UART/              
+altera_ver:              ./libraries/altera_ver/             
+lpm_ver:                 ./libraries/lpm_ver/                
+sgate_ver:               ./libraries/sgate_ver/              
+altera_mf_ver:           ./libraries/altera_mf_ver/          
+altera_lnsim_ver:        ./libraries/altera_lnsim_ver/       
+cycloneive_ver:          ./libraries/cycloneive_ver/         
+altera:                  ./libraries/altera/                 
+lpm:                     ./libraries/lpm/                    
+sgate:                   ./libraries/sgate/                  
+altera_mf:               ./libraries/altera_mf/              
+altera_lnsim:            ./libraries/altera_lnsim/           
+cycloneive:              ./libraries/cycloneive/             
+LIBRARY_SCAN = TRUE

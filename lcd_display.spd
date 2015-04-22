@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="lcd_display/simulation/submodules/Altera_UP_Flash_Memory_IP_Core_Avalon_Interface.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="lcd_display/simulation/submodules/Altera_UP_Flash_Memory_Controller.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="lcd_display/simulation/submodules/Altera_UP_Flash_Memory_IP_Core_Standalone.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="lcd_display/simulation/submodules/Altera_UP_Flash_Memory_User_Interface.vhd"
+   type="VHDL"
+   library="Flash" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_External_Clocks.vhd"
+   type="VHDL"
+   library="External_Clocks" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_sysid.vho"
+   type="VHDL"
+   library="sysid" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU.ocp"
+   type="OTHER"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU.sdc"
+   type="SDC"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU.vhd"
+   type="VHDL_ENCRYPT"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU.vho"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_ic_tag_ram.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_ic_tag_ram.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_ic_tag_ram.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_jtag_debug_module_sysclk.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_jtag_debug_module_tck.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_jtag_debug_module_wrapper.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_mult_cell.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_nios2_waves.do"
+   type="OTHER"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_ociram_default_contents.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_ociram_default_contents.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_ociram_default_contents.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_oci_test_bench.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_rf_ram_a.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_rf_ram_a.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_rf_ram_a.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_rf_ram_b.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_rf_ram_b.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_rf_ram_b.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_test_bench.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_alpha_blender_normal.v"
+   type="VERILOG"
+   library="Alpha_Blending" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_alpha_blender_simple.v"
+   type="VERILOG"
+   library="Alpha_Blending" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Alpha_Blending.vhd"
+   type="VHDL"
+   library="Alpha_Blending" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_CPU_fpoint.vho"
+   type="VHDL"
+   library="CPU_fpoint" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_VGA_Dual_Clock_FIFO.vhd"
+   type="VHDL"
+   library="VGA_Dual_Clock_FIFO" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_scaler_shrink.v"
+   type="VERILOG"
+   library="VGA_Pixel_Scaler" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_scaler_multiply_width.v"
+   type="VERILOG"
+   library="VGA_Pixel_Scaler" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_scaler_multiply_height.v"
+   type="VERILOG"
+   library="VGA_Pixel_Scaler" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_VGA_Pixel_Scaler.vhd"
+   type="VHDL"
+   library="VGA_Pixel_Scaler" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_VGA_Pixel_RGB_Resampler.vhd"
+   type="VHDL"
+   library="VGA_Pixel_RGB_Resampler" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_avalon_video_vga_timing.v"
+   type="VERILOG"
+   library="VGA_Controller" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_VGA_Controller.vhd"
+   type="VHDL"
+   library="VGA_Controller" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_128_character_rom.v"
+   type="VERILOG"
+   library="VGA_Char_Buffer" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_fb_color_rom.v"
+   type="VERILOG"
+   library="VGA_Char_Buffer" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_char_mode_rom_128.mif"
+   type="MIF"
+   library="VGA_Char_Buffer" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_video_fb_color_rom.mif"
+   type="MIF"
+   library="VGA_Char_Buffer" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_VGA_Char_Buffer.vhd"
+   type="VHDL"
+   library="VGA_Char_Buffer" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_VGA_Pixel_Buffer.vhd"
+   type="VHDL"
+   library="VGA_Pixel_Buffer" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_SRAM.vhd"
+   type="VHDL"
+   library="SRAM" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_ps2.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_ps2_command_out.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_ps2_data_in.v"
+   type="VERILOG"
+   library="PS2_Port" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_PS2_Port.vhd"
+   type="VHDL"
+   library="PS2_Port" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_character_lcd_communication.v"
+   type="VERILOG"
+   library="Char_LCD_16x2" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_character_lcd_initialization.v"
+   type="VERILOG"
+   library="Char_LCD_16x2" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Char_LCD_16x2.vhd"
+   type="VHDL"
+   library="Char_LCD_16x2" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_audio_bit_counter.v"
+   type="VERILOG"
+   library="Audio" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_audio_in_deserializer.v"
+   type="VERILOG"
+   library="Audio" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_audio_out_serializer.v"
+   type="VERILOG"
+   library="Audio" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_clock_edge.v"
+   type="VERILOG"
+   library="Audio" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_sync_fifo.v"
+   type="VERILOG"
+   library="Audio" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Audio.vhd"
+   type="VHDL"
+   library="Audio" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_serial_bus_controller.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_slow_clock_generator.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_dc2.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_d5m.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_lcm.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ltm.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ob_de2_35.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ob_adv7181.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ob_de2_70.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ob_de2_115.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ob_audio.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_av_config_auto_init_ob_adv7180.v"
+   type="VERILOG"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_AV_Config.vhd"
+   type="VHDL"
+   library="AV_Config" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_rs232_counters.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_rs232_in_deserializer.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_rs232_out_serializer.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="lcd_display/simulation/submodules/altera_up_sync_fifo.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Serial_Port.vhd"
+   type="VHDL"
+   library="Serial_Port" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Expansion_JP5.vhd"
+   type="VHDL"
+   library="Expansion_JP5" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Pushbuttons.vhd"
+   type="VHDL"
+   library="Pushbuttons" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Slider_Switches.vhd"
+   type="VHDL"
+   library="Slider_Switches" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_HEX7_HEX4.vhd"
+   type="VHDL"
+   library="HEX7_HEX4" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_HEX3_HEX0.vhd"
+   type="VHDL"
+   library="HEX3_HEX0" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Green_LEDs.vhd"
+   type="VHDL"
+   library="Green_LEDs" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Red_LEDs.vhd"
+   type="VHDL"
+   library="Red_LEDs" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_SDRAM.vhd"
+   type="VHDL"
+   library="SDRAM" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_Interval_Timer.vhd"
+   type="VHDL"
+   library="Interval_Timer" />
+ <file
+   path="lcd_display/simulation/submodules/lcd_display_JTAG_UART.vhd"
+   type="VHDL"
+   library="JTAG_UART" />
+ <file path="lcd_display/simulation/lcd_display.vhd" type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_width_adapter.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_width_adapter_001.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_width_adapter_003.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_width_adapter_004.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_burst_adapter.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_burst_adapter_001.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_rst_controller.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_rst_controller_002.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_rst_controller_003.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_char_lcd_16x2_avalon_lcd_slave_translator_avalon_universal_slave_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_cpu_instruction_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_cpu_data_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_vga_pixel_buffer_avalon_pixel_dma_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_video_in_dma_controller_avalon_dma_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_cpu_jtag_debug_module_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_sdram_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_flash_flash_data_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_jtag_uart_avalon_jtag_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_interval_timer_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_sysid_control_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_red_leds_avalon_parallel_port_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_serial_port_avalon_rs232_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_char_lcd_16x2_avalon_lcd_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_ps2_port_avalon_ps2_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_sram_avalon_sram_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_vga_char_buffer_avalon_char_buffer_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_av_config_avalon_av_config_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_vga_pixel_buffer_avalon_control_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_audio_avalon_audio_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_flash_flash_erase_control_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_sd_card_avalon_sdcard_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_usb_avalon_usb_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_cpu_instruction_master_translator_avalon_universal_master_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="lcd_display/simulation/lcd_display_vga_pixel_buffer_avalon_pixel_dma_master_translator_avalon_universal_master_0_agent.vhd"
+   type="VHDL" />
+ <topLevel name="lcd_display" />
+ <deviceFamily name="cycloneive" />
+</simPackage>
