@@ -322,7 +322,18 @@ begin
 --							  Internal Modules							 --
 -------------------------------------------------------------------------------
 
-
+-- Initialize LED displays
+LEDR(17 downto 11) <= SW(17 downto 11);
+LEDR(9 downto 0) <= "1111111111";
+LEDG(8 downto 0) <= "000000001";
+HEX0 <= "1000000";
+HEX1 <= "1000000";
+HEX2 <= "1000000";
+HEX3 <= "1000000";
+HEX4 <= "1000000";
+HEX5 <= "1000000";
+HEX6 <= "1000000";
+HEX7 <= "1000000";
 
 NiosII : lcd_display
 	port map(
@@ -361,19 +372,19 @@ NiosII : lcd_display
 												=> GPIO(35 downto 19),
 
 		-- the_Green_LEDs
-		LEDG_from_the_Green_LEDs 				=> LEDG,
+		--LEDG_from_the_Green_LEDs 				=> LEDG,
 		
 		-- the_HEX3_HEX0
-		HEX0_from_the_HEX3_HEX0 				=> HEX0,
-		HEX1_from_the_HEX3_HEX0 				=> HEX1,
-		HEX2_from_the_HEX3_HEX0 				=> HEX2,
-		HEX3_from_the_HEX3_HEX0 				=> HEX3,
+		--HEX0_from_the_HEX3_HEX0 				=> HEX0,
+		--HEX1_from_the_HEX3_HEX0 				=> HEX1,
+		--HEX2_from_the_HEX3_HEX0 				=> HEX2,
+		--HEX3_from_the_HEX3_HEX0 				=> HEX3,
 		
 		-- the_HEX7_HEX4
-		HEX4_from_the_HEX7_HEX4 				=> HEX4,
-		HEX5_from_the_HEX7_HEX4					=> HEX5,
-		HEX6_from_the_HEX7_HEX4					=> HEX6,
-		HEX7_from_the_HEX7_HEX4					=> HEX7,
+		--HEX4_from_the_HEX7_HEX4 				=> HEX4,
+		--HEX5_from_the_HEX7_HEX4					=> HEX5,
+		--HEX6_from_the_HEX7_HEX4					=> HEX6,
+		--HEX7_from_the_HEX7_HEX4					=> HEX7,
 		
 		-- the_PS2_Port
 		PS2_CLK_to_and_from_the_PS2_Port		=> PS2_KBCLK,
@@ -387,7 +398,7 @@ NiosII : lcd_display
 		KEY_to_the_Pushbuttons					=> (KEY(3 downto 1) & "1"),
 
 		-- the_Red_LEDs
-		LEDR_from_the_Red_LEDs 					=> LEDR,
+		--LEDR_from_the_Red_LEDs 					=> LEDR,
 		
 		-- the_SDRAM
 		zs_addr_from_the_sdram					=> DRAM_ADDR,
