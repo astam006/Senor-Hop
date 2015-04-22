@@ -31,14 +31,28 @@ entity final_project is
 			LCD_ON	: out std_logic;								-- Power ON/OFF
 			LCD_RS	: out std_logic;								-- Command/Data Select, 0 = Command, 1 = Data
 			LCD_RW	: out std_logic;								-- Read/Write Select, 0 = Write, 1 = Read
-			LCD_DATA : inout std_logic_vector(7 downto 0);	-- Data bus 8 bits
-			
-			-- Game Logic State
-			STATE : out std_logic_vector(0 to 5)				-- Current Game States
+			LCD_DATA : inout std_logic_vector(7 downto 0)	-- Data bus 8 bits
 	);
 end final_project;
 
 architecture game_logic of final_project is
+
+TYPE STATE_TYPE IS (S0, S1, S2, S3, S4, S5);
+SIGNAL current_state, next_state : STATE_TYPE;
+
+signal sel_signal : std_logic;
+
 begin
-	LEDR <= SW;
+	-- Initialize all LED displays.
+	LEDR(17 downto 11) <= SW(17 downto 11);					-- Switches 17 through 11 are used for cheat codes
+	LEDR(9 downto 0) <= "1111111111";							-- Start with 10 lives.
+	LEDG(0) <= '1';													-- Difficulty starts at level 1
+	HEX0 <= "1000000";												-- Start score display as all zeros.
+	HEX1 <= "1000000";
+	HEX2 <= "1000000";
+	HEX3 <= "1000000";
+	HEX4 <= "1000000";
+	HEX5 <= "1000000";
+	HEX6 <= "1000000";
+	HEX7 <= "1000000";
 end game_logic;
