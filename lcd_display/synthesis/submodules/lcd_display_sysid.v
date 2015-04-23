@@ -36,7 +36,7 @@ module lcd_display_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1429741001 : 0;
+  assign readdata = address ? 1429817243 : 0;
 
 endmodule
 

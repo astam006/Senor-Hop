@@ -20,9 +20,9 @@
 // Altera IRQ Mapper
 //
 // Parameters
-//   NUM_RCVRS        : 10
+//   NUM_RCVRS        : 2
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:8,1:0,2:10,3:1,4:11,5:7,6:6,7:17,8:9,9:2
+//   IRQ_MAP          : 0:8,1:0
 //
 // -------------------------------------------------------
 
@@ -41,14 +41,6 @@ module lcd_display_irq_mapper
     // -------------------
     input                receiver0_irq,
     input                receiver1_irq,
-    input                receiver2_irq,
-    input                receiver3_irq,
-    input                receiver4_irq,
-    input                receiver5_irq,
-    input                receiver6_irq,
-    input                receiver7_irq,
-    input                receiver8_irq,
-    input                receiver9_irq,
 
     // -------------------
     // Command Source (Output)
@@ -62,14 +54,6 @@ module lcd_display_irq_mapper
 
         sender_irq[8] = receiver0_irq;
         sender_irq[0] = receiver1_irq;
-        sender_irq[10] = receiver2_irq;
-        sender_irq[1] = receiver3_irq;
-        sender_irq[11] = receiver4_irq;
-        sender_irq[7] = receiver5_irq;
-        sender_irq[6] = receiver6_irq;
-        sender_irq[17] = receiver7_irq;
-        sender_irq[9] = receiver8_irq;
-        sender_irq[2] = receiver9_irq;
     end
 
 endmodule
