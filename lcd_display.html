@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2015.04.23.15:27:23</td>
+    <td class="l">2015.05.01.11:11:59</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -1531,7 +1531,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="from">clk&#160;&#160;</td>
+      <td class="from">clk_reset&#160;&#160;</td>
       <td class="neighbor" rowspan="4">
        <a href="#module_External_Clocks">External_Clocks</a>
       </td>
@@ -1539,17 +1539,17 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="to">&#160;&#160;clk_in_secondary</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
       <td class="to">&#160;&#160;clk_in_primary_reset</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clk_in_secondary</td>
      </tr>
     </table>
    </div>
@@ -2640,7 +2640,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1429817243</td>
+        <td class="parametervalue">1430493118</td>
        </tr>
        <tr>
         <td class="parametername">AUTO_CLK_CLOCK_RATE</td>
@@ -2673,7 +2673,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1429817243</td>
+        <td class="parametervalue">1430493118</td>
        </tr>
       </table>
      </td>
@@ -2793,13 +2793,13 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     <table class="connectionboxes">
      <tr>
       <td class="neighbor" rowspan="4">
-       <a href="#module_clk_27">clk_27</a>
+       <a href="#module_clk">clk</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
       <td class="main" rowspan="47">External_Clocks</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;clk_in_secondary</td>
+      <td class="to">&#160;&#160;clk_in_primary</td>
      </tr>
      <tr>
       <td class="from">clk_reset&#160;&#160;</td>
@@ -2812,18 +2812,18 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="4">
-       <a href="#module_clk">clk</a>
+       <a href="#module_clk_27">clk_27</a>
       </td>
-      <td class="from">clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clk_in_primary</td>
-     </tr>
-     <tr>
       <td class="from">clk_reset&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk_in_primary_reset</td>
+     </tr>
+     <tr>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk_in_secondary</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3374,7 +3374,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">direction</td>
-        <td class="parametervalue">Output</td>
+        <td class="parametervalue">Input</td>
        </tr>
        <tr>
         <td class="parametername">edgeType</td>
@@ -3402,7 +3402,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">width</td>
-        <td class="parametervalue">15</td>
+        <td class="parametervalue">16</td>
        </tr>
        <tr>
         <td class="parametername">clockRate</td>
@@ -3414,11 +3414,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">derived_has_out</td>
-        <td class="parametervalue">true</td>
+        <td class="parametervalue">false</td>
        </tr>
        <tr>
         <td class="parametername">derived_has_in</td>
-        <td class="parametervalue">false</td>
+        <td class="parametervalue">true</td>
        </tr>
        <tr>
         <td class="parametername">derived_do_test_bench_wiring</td>
@@ -3471,7 +3471,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">DATA_WIDTH</td>
-        <td class="parametervalue">15</td>
+        <td class="parametervalue">16</td>
        </tr>
        <tr>
         <td class="parametername">DO_TEST_BENCH_WIRING</td>
@@ -3491,11 +3491,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">HAS_IN</td>
-        <td class="parametervalue">0</td>
+        <td class="parametervalue">1</td>
        </tr>
        <tr>
         <td class="parametername">HAS_OUT</td>
-        <td class="parametervalue">1</td>
+        <td class="parametervalue">0</td>
        </tr>
        <tr>
         <td class="parametername">HAS_TRI</td>
@@ -3733,7 +3733,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <table class="blueBar">
    <tr>
     <td class="l">generation took 0.00 seconds</td>
-    <td class="r">rendering took 0.11 seconds</td>
+    <td class="r">rendering took 0.13 seconds</td>
    </tr>
   </table>
  </body>

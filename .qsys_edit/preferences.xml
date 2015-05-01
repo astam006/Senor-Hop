@@ -3,19 +3,18 @@
  <debug showDebugMenu="0" />
  <systemtable filter="Default">
   <columns>
-   <connections preferredWidth="30" />
+   <connections preferredWidth="207" />
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="388" />
-   <clocksource preferredWidth="388" />
-   <frequency preferredWidth="368" />
+   <clockname preferredWidth="383" />
+   <clocksource preferredWidth="382" />
+   <frequency preferredWidth="363" />
   </columns>
  </clocktable>
- <library
-   expandedCategories="Library,Project,Library/Peripherals,Library/Peripherals/Microcontroller Peripherals" />
+ <library expandedCategories="Project,Library" />
  <window width="1440" height="860" x="0" y="0" />
  <generation simulation="NONE" synthesis="VHDL" path="_PROJECT_NAME_" />
 </preferences>

@@ -2,7 +2,7 @@ set_global_assignment -entity "lcd_display" -library "lcd_display" -name IP_TOOL
 set_global_assignment -entity "lcd_display" -library "lcd_display" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "lcd_display" -library "lcd_display" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "lcd_display" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../lcd_display.sopcinfo"]
-set_instance_assignment -entity "lcd_display" -library "lcd_display" -name SLD_INFO "QSYS_NAME lcd_display HAS_SOPCINFO 1 GENERATION_ID 1429817243"
+set_instance_assignment -entity "lcd_display" -library "lcd_display" -name SLD_INFO "QSYS_NAME lcd_display HAS_SOPCINFO 1 GENERATION_ID 1430493118"
 set_global_assignment -library "lcd_display" -name MISC_FILE [file join $::quartus(qip_path) "../../lcd_display.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "lcd_display" -name MISC_FILE [file join $::quartus(qip_path) "../../lcd_display.qsys"]
@@ -26,7 +26,6 @@ set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quart
 set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_cpu_jtag_debug_module_translator.vhd"]
 set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_sdram_s1_translator.vhd"]
 set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_bottom_row_s1_translator.vhd"]
-set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_top_row_s1_translator.vhd"]
 set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_jtag_uart_avalon_jtag_slave_translator.vhd"]
 set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_interval_timer_s1_translator.vhd"]
 set_global_assignment -library "lcd_display" -name VHDL_FILE [file join $::quartus(qip_path) "lcd_display_sysid_control_slave_translator.vhd"]
@@ -65,7 +64,6 @@ set_global_assignment -library "lcd_display" -name SYSTEMVERILOG_FILE [file join
 set_global_assignment -library "lcd_display" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "lcd_display" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
 set_global_assignment -library "lcd_display" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lcd_display_location.v"]
-set_global_assignment -library "lcd_display" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lcd_display_bottom_row.v"]
 set_global_assignment -library "lcd_display" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lcd_display_top_row.v"]
 set_global_assignment -library "lcd_display" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lcd_display_External_Clocks.v"]
 set_global_assignment -library "lcd_display" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/lcd_display_sysid.v"]
@@ -162,9 +160,6 @@ set_global_assignment -entity "altera_merlin_master_translator" -library "lcd_di
 set_global_assignment -entity "lcd_display_location" -library "lcd_display" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "lcd_display_location" -library "lcd_display" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "lcd_display_location" -library "lcd_display" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "lcd_display_bottom_row" -library "lcd_display" -name IP_TOOL_NAME "altera_avalon_pio"
-set_global_assignment -entity "lcd_display_bottom_row" -library "lcd_display" -name IP_TOOL_VERSION "13.0.1.99.2"
-set_global_assignment -entity "lcd_display_bottom_row" -library "lcd_display" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "lcd_display_top_row" -library "lcd_display" -name IP_TOOL_NAME "altera_avalon_pio"
 set_global_assignment -entity "lcd_display_top_row" -library "lcd_display" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "lcd_display_top_row" -library "lcd_display" -name IP_TOOL_ENV "Qsys"

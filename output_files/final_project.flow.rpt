@@ -1,5 +1,5 @@
 Flow report for final_project
-Thu Apr 23 16:36:37 2015
+Fri May 01 13:19:07 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 23 16:36:30 2015           ;
+; Flow Status                        ; Successful - Fri May 01 13:19:00 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; final_project                                   ;
 ; Top-level Entity Name              ; final_project                                   ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE115F29C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 5,070 / 114,480 ( 4 % )                         ;
-;     Total combinational functions  ; 4,602 / 114,480 ( 4 % )                         ;
-;     Dedicated logic registers      ; 3,252 / 114,480 ( 3 % )                         ;
-; Total registers                    ; 3371                                            ;
+; Total logic elements               ; 5,215 / 114,480 ( 5 % )                         ;
+;     Total combinational functions  ; 4,736 / 114,480 ( 4 % )                         ;
+;     Dedicated logic registers      ; 3,347 / 114,480 ( 3 % )                         ;
+; Total registers                    ; 3466                                            ;
 ; Total pins                         ; 219 / 529 ( 41 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 51,712 / 3,981,312 ( 1 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 4 / 532 ( < 1 % )                               ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                                  ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/23/2015 16:35:11 ;
+; Start date & time ; 05/01/2015 13:17:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; final_project       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+------------+
 ; Assignment Name                     ; Value                                                         ; Default Value ; Entity Name                     ; Section Id ;
 +-------------------------------------+---------------------------------------------------------------+---------------+---------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 70835003977881.142982131103096                                ; --            ; --                              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 70835003977881.143050064301816                                ; --            ; --                              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_avalon_sc_fifo           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_burst_adapter     ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; altera_merlin_master_agent      ; --         ;
@@ -92,7 +92,6 @@ applicable agreement for further details.
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_SDRAM               ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_addr_router         ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_addr_router_001     ; --         ;
-; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_bottom_row          ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_cmd_xbar_demux      ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_cmd_xbar_demux_001  ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_cmd_xbar_mux        ; --         ;
@@ -108,6 +107,7 @@ applicable agreement for further details.
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_rsp_xbar_mux_001    ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_sysid               ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                          ; --            ; lcd_display_top_row             ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                                                        ; --            ; --                              ; --         ;
 ; IP_TOOL_NAME                        ; altera_avalon_sc_fifo                                         ; --            ; altera_avalon_sc_fifo           ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_burst_adapter                                   ; --            ; altera_merlin_burst_adapter     ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_master_agent                                    ; --            ; altera_merlin_master_agent      ; --         ;
@@ -124,7 +124,6 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; altera_avalon_new_sdram_controller                            ; --            ; lcd_display_SDRAM               ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_router                                          ; --            ; lcd_display_addr_router         ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_router                                          ; --            ; lcd_display_addr_router_001     ; --         ;
-; IP_TOOL_NAME                        ; altera_avalon_pio                                             ; --            ; lcd_display_bottom_row          ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                   ; --            ; lcd_display_cmd_xbar_demux      ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_demultiplexer                                   ; --            ; lcd_display_cmd_xbar_demux_001  ; --         ;
 ; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                     ; --            ; lcd_display_cmd_xbar_mux        ; --         ;
@@ -140,6 +139,7 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                        ; altera_merlin_multiplexer                                     ; --            ; lcd_display_rsp_xbar_mux_001    ; --         ;
 ; IP_TOOL_NAME                        ; altera_avalon_sysid_qsys                                      ; --            ; lcd_display_sysid               ; --         ;
 ; IP_TOOL_NAME                        ; altera_avalon_pio                                             ; --            ; lcd_display_top_row             ; --         ;
+; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; --                              ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; altera_avalon_sc_fifo           ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; altera_merlin_burst_adapter     ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; altera_merlin_master_agent      ; --         ;
@@ -156,7 +156,6 @@ applicable agreement for further details.
 ; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                   ; --            ; lcd_display_SDRAM               ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; lcd_display_addr_router         ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; lcd_display_addr_router_001     ; --         ;
-; IP_TOOL_VERSION                     ; 13.0.1.99.2                                                   ; --            ; lcd_display_bottom_row          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; lcd_display_cmd_xbar_demux      ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; lcd_display_cmd_xbar_demux_001  ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                                          ; --            ; lcd_display_cmd_xbar_mux        ; --         ;
@@ -176,6 +175,8 @@ applicable agreement for further details.
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                             ; --            ; --                              ; --         ;
 ; MISC_FILE                           ; lcd_display/synthesis/../../lcd_display.cmp                   ; --            ; --                              ; --         ;
 ; MISC_FILE                           ; lcd_display/synthesis/../../lcd_display.qsys                  ; --            ; --                              ; --         ;
+; MISC_FILE                           ; pll1.cmp                                                      ; --            ; --                              ; --         ;
+; MISC_FILE                           ; pll1.ppf                                                      ; --            ; --                              ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                          ; --            ; --                              ; --         ;
 ; PARTITION_COLOR                     ; 16764057                                                      ; --            ; --                              ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                         ; --            ; --                              ; Top        ;
@@ -183,7 +184,7 @@ applicable agreement for further details.
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                           ; --            ; --                              ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                         ; --            ; --                              ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                  ; --            ; --                              ; --         ;
-; SLD_INFO                            ; QSYS_NAME lcd_display HAS_SOPCINFO 1 GENERATION_ID 1429817243 ; --            ; lcd_display                     ; --         ;
+; SLD_INFO                            ; QSYS_NAME lcd_display HAS_SOPCINFO 1 GENERATION_ID 1430493118 ; --            ; lcd_display                     ; --         ;
 ; SOPCINFO_FILE                       ; lcd_display/synthesis/../../lcd_display.sopcinfo              ; --            ; --                              ; --         ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                            ; --            ; --                              ; --         ;
 ; VHDL_INPUT_VERSION                  ; VHDL_2008                                                     ; VHDL_1993     ; --                              ; --         ;
@@ -196,11 +197,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:32     ; 1.0                     ; 679 MB              ; 00:00:26                           ;
-; Fitter                    ; 00:00:34     ; 1.4                     ; 1320 MB             ; 00:00:43                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 453 MB              ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.5                     ; 615 MB              ; 00:00:06                           ;
-; Total                     ; 00:01:18     ; --                      ; --                  ; 00:01:20                           ;
+; Analysis & Synthesis      ; 00:00:29     ; 1.0                     ; 688 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:56     ; 1.4                     ; 1501 MB             ; 00:01:06                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 480 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 621 MB              ; 00:00:07                           ;
+; Total                     ; 00:01:37     ; --                      ; --                  ; 00:01:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

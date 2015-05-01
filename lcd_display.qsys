@@ -244,19 +244,6 @@
          type = "boolean";
       }
    }
-   element bottom_row.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "136314928";
-         type = "String";
-      }
-   }
    element Interval_Timer.s1
    {
       datum _lockedAddress
@@ -283,19 +270,6 @@
          type = "String";
       }
    }
-   element SDRAM.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "0";
-         type = "long";
-      }
-   }
    element location.s1
    {
       datum _lockedAddress
@@ -309,11 +283,45 @@
          type = "String";
       }
    }
+   element bottom_row.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "136314928";
+         type = "String";
+      }
+   }
+   element SDRAM.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "long";
+      }
+   }
    element External_Clocks.sdram_clk
    {
       datum _clockDomain
       {
          value = "sdram_clk";
+         type = "String";
+      }
+   }
+   element External_Clocks.sys_clk
+   {
+      datum _clockDomain
+      {
+         value = "sys_clk";
          type = "String";
       }
    }
@@ -328,14 +336,6 @@
       {
          value = "0";
          type = "boolean";
-      }
-   }
-   element External_Clocks.sys_clk
-   {
-      datum _clockDomain
-      {
-         value = "sys_clk";
-         type = "String";
       }
    }
    element sysid
@@ -387,7 +387,7 @@
  <parameter name="projectName" value="final_project.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1429816376779" />
+ <parameter name="timeStamp" value="1430493065763" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface
@@ -446,11 +446,6 @@
  <interface name="clk_27_clk_in" internal="clk_27.clk_in" type="clock" dir="end">
   <port name="clk_27" internal="in_clk" />
  </interface>
- <interface
-   name="audio"
-   internal="External_Clocks.audio_clk"
-   type="clock"
-   dir="start" />
  <interface
    name="sdram"
    internal="External_Clocks.sdram_clk"
@@ -742,14 +737,14 @@
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
   <parameter name="captureEdge" value="false" />
-  <parameter name="direction" value="Output" />
+  <parameter name="direction" value="Input" />
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
   <parameter name="irqType" value="LEVEL" />
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="15" />
+  <parameter name="width" value="16" />
   <parameter name="clockRate" value="50000000" />
  </module>
  <module
@@ -953,11 +948,6 @@
  <connection
    kind="clock"
    version="13.0"
-   start="clk_27.clk"
-   end="External_Clocks.clk_in_secondary" />
- <connection
-   kind="clock"
-   version="13.0"
    start="clk.clk"
    end="External_Clocks.clk_in_primary" />
  <connection
@@ -1121,6 +1111,11 @@
   <parameter name="baseAddress" value="0x08200010" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clk_27.clk"
+   end="External_Clocks.clk_in_secondary" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="0" />
 </system>

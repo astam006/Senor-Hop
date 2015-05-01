@@ -2,6 +2,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 entity final_project is
 
@@ -30,7 +31,7 @@ port (
 	TD_RESET_N			: out std_logic;
 	
 	--  Simple
-	LEDG				: out std_logic_vector (8 downto 0);
+	LEDG				: inout std_logic_vector (8 downto 0);
 	LEDR				: out std_logic_vector (17 downto 0);
 	HEX0				: out std_logic_vector (6 downto 0);
 	HEX1				: out std_logic_vector (6 downto 0);
@@ -78,64 +79,87 @@ architecture DE2_115_Media_Computer_rtl of final_project is
 -------------------------------------------------------------------------------
 --						   Subentity Declarations						  --
 -------------------------------------------------------------------------------
-	component lcd_display
+		component lcd_display is
 		port (
-              -- 1) global signals:
-                 signal clk : IN STD_LOGIC;
-                 signal clk_27 : IN STD_LOGIC;
-                 signal reset_n : IN STD_LOGIC;
-                 signal sys_clk : OUT STD_LOGIC;
-                 signal sdram_clk : OUT STD_LOGIC;
-                 signal audio_clk : OUT STD_LOGIC;
+			SRAM_DQ_to_and_from_the_SRAM           : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DQ
+			SRAM_ADDR_from_the_SRAM                : out   std_logic_vector(19 downto 0);                    -- ADDR
+			SRAM_LB_N_from_the_SRAM                : out   std_logic;                                        -- LB_N
+			SRAM_UB_N_from_the_SRAM                : out   std_logic;                                        -- UB_N
+			SRAM_CE_N_from_the_SRAM                : out   std_logic;                                        -- CE_N
+			SRAM_OE_N_from_the_SRAM                : out   std_logic;                                        -- OE_N
+			SRAM_WE_N_from_the_SRAM                : out   std_logic;                                        -- WE_N
+			LCD_DATA_to_and_from_the_Char_LCD_16x2 : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- DATA
+			LCD_ON_from_the_Char_LCD_16x2          : out   std_logic;                                        -- ON
+			LCD_BLON_from_the_Char_LCD_16x2        : out   std_logic;                                        -- BLON
+			LCD_EN_from_the_Char_LCD_16x2          : out   std_logic;                                        -- EN
+			LCD_RS_from_the_Char_LCD_16x2          : out   std_logic;                                        -- RS
+			LCD_RW_from_the_Char_LCD_16x2          : out   std_logic;                                        -- RW
+			sys_clk                                : out   std_logic;                                        -- clk
+			reset_n                                : in    std_logic                     := 'X';             -- reset_n
+			zs_addr_from_the_SDRAM                 : out   std_logic_vector(12 downto 0);                    -- addr
+			zs_ba_from_the_SDRAM                   : out   std_logic_vector(1 downto 0);                     -- ba
+			zs_cas_n_from_the_SDRAM                : out   std_logic;                                        -- cas_n
+			zs_cke_from_the_SDRAM                  : out   std_logic;                                        -- cke
+			zs_cs_n_from_the_SDRAM                 : out   std_logic;                                        -- cs_n
+			zs_dq_to_and_from_the_SDRAM            : inout std_logic_vector(31 downto 0) := (others => 'X'); -- dq
+			zs_dqm_from_the_SDRAM                  : out   std_logic_vector(3 downto 0);                     -- dqm
+			zs_ras_n_from_the_SDRAM                : out   std_logic;                                        -- ras_n
+			zs_we_n_from_the_SDRAM                 : out   std_logic;                                        -- we_n
+			clk                                    : in    std_logic                     := 'X';             -- clk
+			clk_27                                 : in    std_logic                     := 'X';             -- clk
+			sdram_clk                              : out   std_logic;                                        -- clk
+			top_row_export                         : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+			bottom_row_export                      : in   std_logic_vector(15 downto 0);                    -- export
+			location_export                        : in    std_logic                     := 'X'              -- export
+		);
+	end component lcd_display;
 
-              -- the_Char_LCD_16x2
-                 signal LCD_BLON_from_the_Char_LCD_16x2 : OUT STD_LOGIC;
-                 signal LCD_DATA_to_and_from_the_Char_LCD_16x2 : INOUT STD_LOGIC_VECTOR (7 DOWNTO 0);
-                 signal LCD_EN_from_the_Char_LCD_16x2 : OUT STD_LOGIC;
-                 signal LCD_ON_from_the_Char_LCD_16x2 : OUT STD_LOGIC;
-                 signal LCD_RS_from_the_Char_LCD_16x2 : OUT STD_LOGIC;
-                 signal LCD_RW_from_the_Char_LCD_16x2 : OUT STD_LOGIC;
+component pll1
+	PORT
+	(
+		inclk0		: IN STD_LOGIC  := '0';
+		c0		: OUT STD_LOGIC 
+	);
+end component;
+
+component hex_display IS
+ 	PORT ( number : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+ 		   display : OUT STD_LOGIC_VECTOR(6 DOWNTO 0));
+END component;
+
+component debounce is
+	port(
+	clk, d : in std_logic;
+	q : out std_logic);
+end component debounce;		
 
 
-              -- the_SDRAM
-                 signal zs_addr_from_the_SDRAM : OUT STD_LOGIC_VECTOR (12 DOWNTO 0);
-                 signal zs_ba_from_the_SDRAM : OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
-                 signal zs_cas_n_from_the_SDRAM : OUT STD_LOGIC;
-                 signal zs_cke_from_the_SDRAM : OUT STD_LOGIC;
-                 signal zs_cs_n_from_the_SDRAM : OUT STD_LOGIC;
-                 signal zs_dq_to_and_from_the_SDRAM : INOUT STD_LOGIC_VECTOR (31 DOWNTO 0);
-                 signal zs_dqm_from_the_SDRAM : OUT STD_LOGIC_VECTOR (3 DOWNTO 0);
-                 signal zs_ras_n_from_the_SDRAM : OUT STD_LOGIC;
-                 signal zs_we_n_from_the_SDRAM : OUT STD_LOGIC;
 
-              -- the_SRAM
-                 signal SRAM_ADDR_from_the_SRAM : OUT STD_LOGIC_VECTOR (19 DOWNTO 0);
-                 signal SRAM_CE_N_from_the_SRAM : OUT STD_LOGIC;
-                 signal SRAM_DQ_to_and_from_the_SRAM : INOUT STD_LOGIC_VECTOR (15 DOWNTO 0);
-                 signal SRAM_LB_N_from_the_SRAM : OUT STD_LOGIC;
-                 signal SRAM_OE_N_from_the_SRAM : OUT STD_LOGIC;
-                 signal SRAM_UB_N_from_the_SRAM : OUT STD_LOGIC;
-                 signal SRAM_WE_N_from_the_SRAM : OUT STD_LOGIC
-
-			  );
-	end component;
-	
-
+	signal top_row : std_logic_vector(15 downto 0) := x"1010";
+	signal bottom_row : std_logic_vector(15 downto 0) := x"8081";
+	signal score : std_logic_vector(15 downto 0) := x"0000";
+	signal location : std_logic;
+	signal sys_clk1 : std_logic;
+	signal control : std_logic;
+	signal reset : std_logic := '1';
 begin
 
 
 -- Initialize LED displays
-LEDR(17 downto 11) <= SW(17 downto 11);
-LEDR(9 downto 0) <= "1111111111";
-LEDG(8 downto 0) <= "000000001";
-HEX0 <= "1000000";
-HEX1 <= "1000000";
-HEX2 <= "1000000";
-HEX3 <= "1000000";
+LEDR <= SW(17) & "00000000000000" & SW(2 downto 0);
 HEX4 <= "1000000";
 HEX5 <= "1000000";
 HEX6 <= "1000000";
 HEX7 <= "1000000";
+
+hex_0 : hex_display port map (score(3 downto 0),HEX0);
+hex_1 : hex_display port map (score(7 downto 4),HEX1);
+hex_2 : hex_display port map (score(11 downto 8),HEX2);
+hex_3 : hex_display port map (score(15 downto 12),HEX3);
+
+res : debounce port map (CLOCK_50, KEY(0), reset);
+
+pll : pll1 port map(CLOCK_50, sys_clk1);
 
 NiosII : lcd_display
 	port map(
@@ -172,8 +196,82 @@ NiosII : lcd_display
 		SRAM_LB_N_from_the_SRAM					=> SRAM_LB_N,
 		SRAM_OE_N_from_the_SRAM					=> SRAM_OE_N,
 		SRAM_UB_N_from_the_SRAM 				=> SRAM_UB_N,
-		SRAM_WE_N_from_the_SRAM 				=> SRAM_WE_N
+		SRAM_WE_N_from_the_SRAM 				=> SRAM_WE_N,
+	
+		top_row_export => top_row,
+		bottom_row_export => bottom_row,
+		location_export => SW(17)
 	);
+	
+	process(control, LEDG)
+	begin
+	if rising_edge(control) then
+		if LEDG(8) = '1' then
+			score <= x"0000";
+		else
+			score <= score+1;
+		end if;
+	end if;
+		
+	end process;
+	
+	
+	process(control)
+	begin
+	
+	
+	
+	LEDG <= "000000001";
+		if(top_row(15) = '1' or bottom_row(15) = '1') then
+			if(SW(17) = '1') then
+				if(SW(17) = top_row(15)) then
+					if (score > 0) then
+					LEDG <= "100000001";
+					else
+					LEDG <= "000000001";
+					end if;
+				end if;
+			else
+				if(not SW(17) = bottom_row(15)) then
+					if (score > 0) then
+					LEDG <= "100000001";
+					else
+					LEDG <= "000000001";
+					end if;
+				end if;
+			end if;
+		end if;
+			
+	if rising_edge(control) then
+	top_row <= std_logic_vector(rotate_left(unsigned(top_row),1));
+	bottom_row <= std_logic_vector(rotate_left(unsigned(bottom_row),1));
+	end if;
+
+	end process;
+	
+	process(sys_clk1, reset)
+	variable count : integer :=1;
+	variable speed : unsigned(31 downto 0) := x"00000000";
+	begin 
+	speed(2 downto 0) := unsigned(SW(2 downto 0));
+		if reset='0' then   
+			count := 1;
+			control <= '0';
+		else
+		if(rising_edge(sys_clk1)) then
+			if (count = (16384*(10-speed))) then
+				count := 0;
+				control <= '1';
+			else
+				control <= '0';
+			end if;
+			
+			count := count+1; 
+		 end if;
+			
+		end if;
+		
+	end process;   
 	
 end DE2_115_Media_Computer_rtl;
 
